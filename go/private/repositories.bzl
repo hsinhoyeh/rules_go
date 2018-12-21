@@ -49,7 +49,7 @@ def go_rules_dependencies():
         git_repository,
         name = "com_github_golang_protobuf",
         remote = "https://github.com/golang/protobuf",
-        commit = "aa810b61a9c79d51363740d207bb46cf8e620ed5",  # v1.2.0, as of 2018-09-28
+        commit = "1d3f30b51784bec5aad268e59fd3c2fc1c2fe73f",  # lastet master on 12-28-2018
         patches = [
             "@io_bazel_rules_go//third_party:com_github_golang_protobuf-gazelle.patch",
             "@io_bazel_rules_go//third_party:com_github_golang_protobuf-extras.patch",
@@ -133,7 +133,7 @@ def go_rules_dependencies():
         git_repository,
         name = "org_golang_google_grpc",
         remote = "https://github.com/grpc/grpc-go",
-        commit = "8dea3dc473e90c8179e519d91302d0597c0ca1d1",  # v1.15.0, latest as of 2018-09-28
+        commit = "df014850f6dee74ba2fc94874043a9f3f75fbfd8",  # v1.17.0, latest as of 2018-12-21
         patches = [
             "@io_bazel_rules_go//third_party:org_golang_google_grpc-gazelle.patch",
             "@io_bazel_rules_go//third_party:org_golang_google_grpc-android.patch",
